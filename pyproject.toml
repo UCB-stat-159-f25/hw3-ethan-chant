@@ -20,7 +20,6 @@ dependencies = [
 ]
 
 license = "BSD-3-Clause"
-license-files = ["LICEN[CS]E*"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent"
@@ -32,5 +31,5 @@ keywords = ["LIGO", "gravitational waves", "tools"]
 Homepage = "https://github.com/UCB-stat-159-f25/hw3-ethan-chant"
 Issues = "https://github.com/UCB-stat-159-f25/hw3-ethan-chant/issues"
 
-[tool.setuptools.dynamic]
-version = {attr = "ligotools.__version__"}
+[tool.setuptools]
+packages = ["ligotools"]
